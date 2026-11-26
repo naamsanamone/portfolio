@@ -234,14 +234,13 @@ export default function App() {
   const metrics = [
     { value: "3.7 YOE", label: "Software & AI Engineering", hoverColor: "group-hover:text-blue-400" },
     { value: "2+ Yrs", label: "Agentic AI & Production RAG", hoverColor: "group-hover:text-emerald-400" },
-    { value: "70K+", label: "Daily FedEx Hub Scans", hoverColor: "group-hover:text-blue-400" },
     { value: "300+", label: "LeetCode Solved (Java & Python)", hoverColor: "group-hover:text-amber-400" },
   ];
 
   const achievements = [
     { icon: ShieldCheck, iconBg: "bg-emerald-500/10 border-emerald-500/20", iconText: "text-emerald-400", title: "SAFe 6 Practitioner & Azure AZ-900", desc: "Certified SAFe 6 Practitioner and Microsoft Certified: Azure Fundamentals (AZ-900), validating agile enterprise delivery and cloud engineering standards." },
     { icon: Zap, iconBg: "bg-blue-500/10 border-blue-500/20", iconText: "text-blue-400", title: "Chrome Web Store & Render Deployments", desc: "Published LinkedApply Pro to Google Chrome Web Store (BYOK AI auto-applier); deployed DeGhost live MVP on Render with sub-second WebSocket forensic audits." },
-    { icon: Sparkles, iconBg: "bg-indigo-500/10 border-indigo-500/20", iconText: "text-indigo-400", title: "LangGraph Agentic Automation & RAG", desc: "Architected LangGraph modernization workflows, FAISS-driven test generation, and compliance RAG handling 70,000+ daily package scans at FedEx." },
+    { icon: Sparkles, iconBg: "bg-indigo-500/10 border-indigo-500/20", iconText: "text-indigo-400", title: "LangGraph Agentic Automation & RAG", desc: "Architected LangGraph modernization workflows, FAISS-driven test generation, and compliance RAG for FedEx global regulatory compliance." },
     { icon: Terminal, iconBg: "bg-purple-500/10 border-purple-500/20", iconText: "text-purple-400", title: "300+ LeetCode & Research Publication", desc: "Solved 300+ problems on LeetCode in Java and Python. Authored lung cancer prediction research (ResNet-50) published in IJARBEST and won Best Paper Award." },
   ];
 
@@ -351,9 +350,12 @@ export default function App() {
               </span>
             </h1>
             <p className="text-zinc-400 text-sm sm:text-base leading-relaxed max-w-3xl pt-1">
-              AI Evaluation Specialist with <strong className="text-zinc-200 font-semibold">3.7 YOE</strong> in software engineering, including <strong className="text-zinc-200 font-semibold">2+ years</strong> designing production-grade Agentic AI systems, RAG pipelines, and LLM-integrated workflows using LangChain, LangGraph, LangSmith, and Python (FastAPI) alongside enterprise Java/Spring Boot microservices.
-              Proficient in <strong className="text-zinc-200 font-semibold">LLM evaluation</strong>, preference ranking, hallucination detection, red-teaming, and benchmark frameworks (RAGAS, DeepEval, HumanEval, SWE-bench).
-              Systems Engineer at <strong className="text-zinc-200 font-semibold">TCS</strong> (Loan Processing Platform) and ex-<strong className="text-zinc-200 font-semibold">FedEx</strong> compliance (70,000+ daily scans).
+              AI Evaluation Specialist with <strong className="text-zinc-200 font-semibold">3.7 YOE</strong> in software engineering, including <strong className="text-zinc-200 font-semibold">2+ years</strong> designing production-grade Agentic AI systems, RAG pipelines, and LLM-integrated workflows using LangChain, LangGraph, LangSmith, and Python (FastAPI) alongside enterprise Java/Spring Boot microservices.
+
+              Proficient in <strong className="text-zinc-200 font-semibold">LLM evaluation</strong>, preference ranking, hallucination detection, red-teaming, and benchmark frameworks (RAGAS, DeepEval, HumanEval, SWE-bench).
+
+              Systems Engineer at <strong className="text-zinc-200 font-semibold">TCS</strong> (Loan Processing Platform) and ex-<strong className="text-zinc-200 font-semibold">FedEx</strong> global regulatory compliance.
+
             </p>
           </motion.div>
 
