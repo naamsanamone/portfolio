@@ -241,7 +241,7 @@ export default function App() {
     { icon: ShieldCheck, iconBg: "bg-emerald-500/10 border-emerald-500/20", iconText: "text-emerald-400", title: "SAFe 6 Practitioner & Azure AZ-900", desc: "Certified SAFe 6 Practitioner and Microsoft Certified: Azure Fundamentals (AZ-900), validating agile enterprise delivery and cloud engineering standards." },
     { icon: Zap, iconBg: "bg-blue-500/10 border-blue-500/20", iconText: "text-blue-400", title: "Chrome Web Store & Render Deployments", desc: "Published LinkedApply Pro to Google Chrome Web Store (BYOK AI auto-applier); deployed DeGhost live MVP on Render with sub-second WebSocket forensic audits." },
     { icon: Sparkles, iconBg: "bg-indigo-500/10 border-indigo-500/20", iconText: "text-indigo-400", title: "LangGraph Agentic Automation & RAG", desc: "Architected LangGraph modernization workflows, FAISS-driven test generation, and compliance RAG for FedEx global regulatory compliance." },
-    { icon: Terminal, iconBg: "bg-purple-500/10 border-purple-500/20", iconText: "text-purple-400", title: "300+ LeetCode & Research Publication", desc: "Solved 300+ problems on LeetCode in Java and Python. Authored lung cancer prediction research (ResNet-50) published in IJARBEST and won Best Paper Award." },
+    { icon: Terminal, iconBg: "bg-purple-500/10 border-purple-500/20", iconText: "text-purple-400", title: "300+ LeetCode & Research Publication", desc: "Solved 300+ problems on LeetCode in Java and Python. Final year project: Lung Cancer Prediction Model using deep learning (ResNet-50) for medical image-based cancer detection — published in IJARBEST, Best Paper Award." },
   ];
 
   return (
