@@ -174,11 +174,11 @@ export default function App() {
       period: "August 2026 – Present",
       location: "Hyderabad, India",
       points: [
-        "Recently joined TCS as Systems Engineer, completing enterprise onboarding and Knowledge Transfer (KT) for the Loan Processing Platform (LPP), an internal microservice framework built on Spring Boot and Spring Integration, exploring integration of AI-assisted automation pipelines.",
-        "Currently working on KYC (Know Your Customer) service tasks, implementing core business logic, data modeling, and database operations for automated customer onboarding, verification, and AI-powered document intelligence checks.",
-        "Engaged in standardizing microservices development through reusable components across security, logging, request/response handling, caching, circuit breakers, and external integrations (BRE, CIBIL, DMS), evaluating LLM-driven semantic verification workflows."
+        "Engineered and maintained core banking microservices for the Loan Processing Platform (LPP), a high-scale framework built on Spring Boot and Spring Integration, standardizing reusable components across security, logging, caching, circuit breakers, and integration gateways.",
+        "Developed business logic and database operations for the KYC (Know Your Customer) microservice, powering automated customer onboarding, verification, underwriting, and disbursement workflows.",
+        "Integrated external enterprise banking interfaces including Business Rule Engine (BRE), CIBIL credit scoring, Document Management System (DMS), and core banking systems via fault-tolerant REST APIs. Exploring integration of AI-assisted verification workflows for automated compliance checks."
       ],
-      tech: ["Java", "Spring Boot", "Spring Integration", "Microservices", "Python", "LangChain", "REST APIs", "Redis", "Resilience4j", "PostgreSQL", "Docker", "BRE", "CIBIL", "DMS"]
+      tech: ["Java", "Spring Boot", "Spring Integration", "Microservices", "REST APIs", "Redis", "Resilience4j", "PostgreSQL", "Docker", "BRE", "CIBIL", "DMS"]
     },
     {
       role: "Associate Software Engineer",
@@ -189,13 +189,14 @@ export default function App() {
       period: "Apr 2023 – July 2026",
       location: "Hyderabad, India",
       points: [
-        "Architected an Agentic AI automation workflow using LangGraph to assist in legacy code modernization, automatically analyzing legacy business logic and generating structured Domain-Specific Language (DSL) scripts to produce corresponding Spring Boot microservices.",
         "Built an AI-Based Test Case Generation Engine leveraging LLMs and FAISS vector search over historical JIRA tickets, automating test generation and cutting manual QA authoring effort by ~40%.",
+        "Architected an Agentic AI automation workflow using LangGraph to assist in legacy code modernization, automatically analyzing legacy business logic and generating structured Domain-Specific Language (DSL) scripts to produce corresponding Spring Boot microservices.",
         "Developed a RAG-powered compliance scanning engine with semantic intercept rules (MHC/SLC) to validate international package manifests against customs regulations across 70,000+ daily package scans.",
-        "Engineered high-throughput RESTful APIs using Python FastAPI and Spring Boot for Filter, Split, and Super Split microservices across 120+ global HUB sorting facilities.",
-        "Leveraged Splunk and LangSmith for centralized tracing, telemetry, correlation IDs, and token evaluation, reducing average operational incident resolution time from ~2 hours to ~1 hour."
+        "Engineered high-throughput RESTful APIs using Python FastAPI and Spring Boot for Filter, Split, Super Split, MHC, and SLC microservices, reducing compliance violations by 35%.",
+        "Leveraged Splunk and LangSmith for centralized tracing, telemetry, correlation IDs, and token evaluation, reducing average operational incident resolution time from ~2 hours to ~1 hour.",
+        "Enforced rigorous code quality by embedding JUnit/Mockito tests and SonarQube quality gates into Jenkins CI/CD pipelines, achieving 85%+ code coverage."
       ],
-      tech: ["Python (FastAPI)", "LangGraph", "LangChain", "FAISS", "Java (Spring Boot)", "Spring Cloud", "PostgreSQL", "Redis", "RabbitMQ", "Docker", "LangSmith", "Splunk"]
+      tech: ["Python (FastAPI)", "LangGraph", "LangChain", "FAISS", "Java (Spring Boot)", "Spring Cloud", "PostgreSQL", "Redis", "RabbitMQ", "Docker", "LangSmith", "Splunk", "JUnit", "SonarQube"]
     },
     {
       role: "Python Intern",
@@ -214,15 +215,16 @@ export default function App() {
   ];
 
   const skillCategories = [
-    { name: "GenAI & Agents", skills: ["LangChain", "LangGraph", "LangSmith", "Multi-Agent Orchestration", "Autonomous Agents", "Tool Calling"] },
+    { name: "GenAI & Agents", skills: ["LangChain", "LangGraph", "LangSmith", "Multi-Agent Orchestration", "Autonomous Agents", "Tool Calling", "MCP"] },
+    { name: "AI Evaluation", skills: ["RAGAS", "DeepEval", "Promptfoo", "LLM-as-a-Judge", "HumanEval", "MT-Bench", "SWE-bench", "Pass@k"] },
+    { name: "RLHF & Alignment", skills: ["DPO", "PPO", "Reward Modeling", "SFT", "RLAIF", "Pairwise Preference Ranking", "Hugging Face TRL"] },
+    { name: "Safety & Red-Teaming", skills: ["NeMo Guardrails", "Llama Guard", "Garak", "PyRIT", "Presidio", "OWASP LLM Top 10", "NIST AI RMF"] },
     { name: "Vector Search & RAG", skills: ["RAG Pipelines", "Pinecone", "FAISS", "PGVector", "ChromaDB", "Semantic Caching", "Hybrid Search (Dense + BM25)"] },
-    { name: "LLMs & Models", skills: ["Claude 3.5 Sonnet", "GPT-4o", "Gemini 1.5 Pro", "Llama 3", "Structured Outputs (Pydantic)", "Hugging Face"] },
-    { name: "Backend & APIs", skills: ["Python (FastAPI, Flask, asyncio)", "Java (Spring Boot, Spring Integration)", "RESTful APIs", "WebSockets", "Microservices"] },
-    { name: "Databases & Caching", skills: ["PostgreSQL", "asyncpg", "Redis (Semantic & In-Memory)", "MongoDB", "MySQL", "SQLAlchemy"] },
-    { name: "Cloud & DevOps", skills: ["AWS (Lambda, S3, EC2, IAM)", "Microsoft Azure (AZ-900)", "Docker", "Jenkins", "CI/CD", "Git"] },
-    { name: "Testing & Monitoring", skills: ["LangSmith (Tracing & Eval)", "JUnit", "Mockito", "PyTest", "Splunk Logging", "SonarQube"] },
-    { name: "Tools & Environments", skills: ["GitHub Copilot", "Postman", "Swagger", "Chrome Extension (MV3)", "IntelliJ IDEA", "VS Code", "Figma"] },
-    { name: "CS Concepts", skills: ["Distributed Systems", "System Design", "Data Structures & Algorithms", "Design Patterns", "SOLID"] }
+    { name: "LLMs & Models", skills: ["Claude 3.5 Sonnet", "GPT-4o", "Gemini 1.5 Pro", "Llama 3", "Structured Outputs (Pydantic)", "Hugging Face Transformers"] },
+    { name: "Backend & APIs", skills: ["Python (FastAPI, asyncio, PyTest)", "Java (Spring Boot, Spring Integration)", "TypeScript", "RESTful APIs", "WebSockets", "Microservices"] },
+    { name: "Databases & Infra", skills: ["PostgreSQL", "Redis", "MongoDB", "Docker", "AWS (Lambda, S3, EC2)", "Azure (AZ-900)", "Jenkins", "CI/CD", "Git"] },
+    { name: "Testing & Monitoring", skills: ["LangSmith Tracing", "JUnit", "Mockito", "PyTest", "SonarQube", "Splunk Logging", "JaCoCo"] },
+    { name: "Quality Ops", skills: ["Gold-Standard Dataset Design", "Inter-Rater Agreement (IRA/IRR)", "Annotation Guidelines", "Rubric Scoring", "QA Auditing"] }
   ];
 
   const filteredCategories = activeSkillCategory === 'All' 
@@ -230,7 +232,7 @@ export default function App() {
     : skillCategories.filter(c => c.name === activeSkillCategory);
 
   const metrics = [
-    { value: "3.6 YOE", label: "Software & AI Engineering", hoverColor: "group-hover:text-blue-400" },
+    { value: "3.7 YOE", label: "Software & AI Engineering", hoverColor: "group-hover:text-blue-400" },
     { value: "2+ Yrs", label: "Agentic AI & Production RAG", hoverColor: "group-hover:text-emerald-400" },
     { value: "70K+", label: "Daily FedEx Hub Scans", hoverColor: "group-hover:text-blue-400" },
     { value: "300+", label: "LeetCode Solved (Java & Python)", hoverColor: "group-hover:text-amber-400" },
@@ -338,20 +340,20 @@ export default function App() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75 motion-reduce:hidden"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
             </span>
-            <span>AI Engineer · Agentic AI & RAG Builder</span>
+            <span>AI Evaluation Specialist · Agentic AI Trainer</span>
           </motion.div>
 
           <motion.div variants={staggerItem} className="space-y-3.5">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white leading-[1.14]">
-              Engineering Agentic AI workflows. <br className="hidden sm:inline" />
+              AI Evaluation & Agentic AI Training. <br className="hidden sm:inline" />
               <span className="gradient-text">
-                Shipping production AI products.
+                Building & evaluating production AI systems.
               </span>
             </h1>
             <p className="text-zinc-400 text-sm sm:text-base leading-relaxed max-w-3xl pt-1">
-              AI Engineer with <strong className="text-zinc-200 font-semibold">3.6 YOE</strong> in software engineering, including <strong className="text-zinc-200 font-semibold">2+ years</strong> designing and deploying production-level Agentic AI systems, multi-agent workflows, and RAG pipelines using LangChain, LangGraph, and Python (FastAPI) alongside enterprise Java/Spring Boot microservices.
-              Systems Engineer at <strong className="text-zinc-200 font-semibold">TCS</strong> (Loan Processing Platform KYC) and ex-<strong className="text-zinc-200 font-semibold">FedEx</strong> compliance (70,000+ daily scans).
-              Active builder of <strong className="text-zinc-200 font-semibold">LinkedApply Pro</strong> (Chrome Web Store) and <strong className="text-zinc-200 font-semibold">DeGhost</strong> (Live on Render).
+              AI Evaluation Specialist with <strong className="text-zinc-200 font-semibold">3.7 YOE</strong> in software engineering, including <strong className="text-zinc-200 font-semibold">2+ years</strong> designing production-grade Agentic AI systems, RAG pipelines, and LLM-integrated workflows using LangChain, LangGraph, LangSmith, and Python (FastAPI) alongside enterprise Java/Spring Boot microservices.
+              Proficient in <strong className="text-zinc-200 font-semibold">LLM evaluation</strong>, preference ranking, hallucination detection, red-teaming, and benchmark frameworks (RAGAS, DeepEval, HumanEval, SWE-bench).
+              Systems Engineer at <strong className="text-zinc-200 font-semibold">TCS</strong> (Loan Processing Platform) and ex-<strong className="text-zinc-200 font-semibold">FedEx</strong> compliance (70,000+ daily scans).
             </p>
           </motion.div>
 
@@ -464,7 +466,7 @@ export default function App() {
               <span>Enterprise & Production Experience</span>
             </div>
             <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">Work Experience</h2>
-            <p className="text-xs sm:text-sm text-zinc-400">Agentic modernization pipelines, RAG compliance scanning, and enterprise banking microservices.</p>
+            <p className="text-xs sm:text-sm text-zinc-400">AI evaluation, agentic modernization pipelines, RAG compliance scanning, and enterprise banking microservices.</p>
           </div>
 
           <motion.div className="space-y-5" variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true }}>
@@ -530,7 +532,7 @@ export default function App() {
               <span>Technical Expertise</span>
             </div>
             <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">Skills & Core Technologies</h2>
-            <p className="text-xs sm:text-sm text-zinc-400">Categorized expertise across Agentic AI frameworks, vector search, LLMs, microservices, and databases.</p>
+            <p className="text-xs sm:text-sm text-zinc-400">Categorized expertise across AI evaluation, RLHF, agentic AI frameworks, vector search, LLMs, safety, and enterprise systems.</p>
           </div>
 
           <div className="flex flex-wrap items-center gap-1.5" role="tablist" aria-label="Skill categories">
@@ -629,7 +631,7 @@ export default function App() {
           <SpotlightCard className="p-6 sm:p-10 text-center space-y-4 max-w-2xl mx-auto rounded-2xl">
             <div className="space-y-2">
               <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">Let's Build Something High-Impact</h2>
-              <p className="text-xs sm:text-sm text-zinc-400 max-w-lg mx-auto">Open to AI Engineer, Agentic AI, and Full-Stack Engineering roles across global remote teams and early-stage AI startups.</p>
+              <p className="text-xs sm:text-sm text-zinc-400 max-w-lg mx-auto">Open to AI Evaluation, Agentic AI Training, Code Generation Review, and RLHF freelance opportunities across Turing, Mercor, Scale AI, Outlier, and global remote teams.</p>
               <p className="text-[11px] font-mono text-zinc-500">Hyderabad, India (IST / UTC+5:30) · Response time: &lt;24 hours</p>
             </div>
             <div className="flex flex-wrap items-center justify-center gap-2.5 pt-1">
